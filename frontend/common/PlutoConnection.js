@@ -420,6 +420,7 @@ export const create_pluto_connection = async ({
 }
 
 export const fetch_pluto_releases = async () => {
+    throw new Error("GitHub API disabled")
     let response = await fetch("https://api.github.com/repos/fonsp/Pluto.jl/releases", {
         method: "GET",
         mode: "cors",
